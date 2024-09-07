@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Larcery Lopez Bazán - Página Personal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #000;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #000;
+            color: #f350ff;
+            padding: 15px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #f614eb;
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+        nav a {
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            text-align: center;
+            display: block;
+        }
+        nav a:hover {
+            background-color: #f8ed1d;
+            color: black;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 15px;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+        .main-content {
+            flex: 2;
+            padding-right: 15px;
+        }
+        .sidebar {
+            flex: 1;
+            padding-left: 15px;
+            border-left: 1px solid #ccc;
+        }
+        section {
+            padding: 15px;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #ccc;
+        }
+        .section-title {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .card {
+            background-color: rgb(234, 19, 234);
+            padding: 10px;
+            border-radius: 25px;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .contact-info {
+            background-color: #000;
+            color: #fff;
+            padding: 30px 15px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            margin: 15px -15px;
+            width: calc(100% + 30px);
+        }
+        .contact-info h3 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .contact-info p {
+            font-size: 14px;
+            margin: 5px 0;
+        }
+        .contact-info a {
+            color: #d736dd;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 10px;
+            border: 2px solid #ffcc00;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .contact-info a:hover {
+            background-color: #ffcc00;
+            color: #000;
+        }
+        footer {
+            background-color: #da32f0;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Bienvenido a la página personal de Larcery López Bazán</h1>
+        <p>Descubre más sobre mis proyectos, habilidades y pasiones.</p>
+    </header>
+
+    <nav>
+        <a href="#about">Sobre mí</a>
+        <a href="#skills">Habilidades</a>
+        <a href="#hobbies">Hobbies</a>
+        <a href="#knowledge">Conocimientos</a>
+        <a href="#contact">Contacto</a>
+    </nav>
+
+    <div class="container">
+        <div class="main-content">
+            <section id="about">
+                <h2 class="section-title">Sobre mí</h2>
+                <p>Hola, soy Larcery Lopez Bazán. Me apasiona el desarrollo tecnológico y creativo. Actualmente, estudio en el Instituto de Excelencia PERÚ-JAPÓN en Chachapoyas, donde curso la carrera de Arquitectura de Plataformas y Servicios de Tecnologías de la Información. Siempre estoy buscando nuevas maneras de innovar y mejorar en mi campo. Mi objetivo es especializarme en el desarrollo web, la creación de contenido, y el diseño gráfico.</p>
+            </section>
+
+            <section id="skills">
+                <h2 class="section-title">Habilidades</h2>
+                <div class="card">
+                    <h3>Desarrollo Web</h3>
+                    <p>Especializándome en HTML, CSS, JavaScript.</p>
+                </div>
+                <div class="card">
+                    <h3>Desarrollo de Aplicaciones Móviles</h3>
+                    <p>Creación de aplicaciones móviles en Android Studio.</p>
+                </div>
+                <div class="card">
+                    <h3>Diseño Gráfico</h3>
+                    <p>Habilidad para crear diseños visuales atractivos y funcionales.</p>
+                </div>
+            </section>
+        </div>
+
+        <aside class="sidebar">
+            <section id="hobbies">
+                <h2 class="section-title">Hobbies</h2>
+                <div class="card">
+                    <p>Me apasiona la tecnología, la lectura de libros de ciencia ficción, y la creación de proyectos personales que mezclen arte y tecnología.</p>
+                </div>
+            </section>
+
+            <section id="knowledge">
+                <h2 class="section-title">Conocimientos</h2>
+                <div class="card">
+                    <p>Tengo conocimientos básicos en diseño gráfico, creación de proyectos y en desarrollo de páginas web, manteniéndome actualizada en las últimas tendencias en inteligencia artificial y tecnología emergente.</p>
+                </div>
+            </section>
+        </aside>
+    </div>
+
+    <section id="contact">
+        <h2 class="section-title">Contacto</h2>
+        <div class="contact-info">
+            <h3>¡Hablemos!</h3>
+            <p><strong>Nombre:</strong> Larcery Lopez Bazán</p>
+            <p><strong>Correo Electrónico:</strong> <a href="mailto:larcelopez2920@gmail.com">larcelopez2920@gmail.com</a></p>
+            <p><strong>Teléfono:</strong> 926766986</p>
+            <a href="https://web.facebook.com/larcely.lopezbazan" target="_blank">Facebook</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Larcery Lopez Bazán - Siempre en busca de la innovación. ¡Hablemos!</p>
+    </footer>
+
+</body>
+</html>
+
+
+
